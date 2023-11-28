@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RoomAlumnos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="condiciones">
+        <item>Edad mayor de</item>
+        <item>Edad menor de</item>
+        <item>Edad igual a</item>
+        <item>Favoritos</item>
+    </string-array>
+
+</resources>

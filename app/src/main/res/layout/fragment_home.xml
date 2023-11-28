@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/verdeClaro"
+        app:hintTextColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/busqueda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Buscar..."
+            android:inputType="text"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/item_alumno_layout"/>
+
+</LinearLayout>
